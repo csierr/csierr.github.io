@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -12,8 +11,6 @@ redirect_from:
 Education
 ======
 * B.Sc. in Electrical Engineering, Minor in Electronics and Telecommunications, Pontificia Universidad Católica de Chile, 2018 - 2024 (GPA: 3.6/4.0)
-<!-- * M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012 -->
 
 Work experience
 ======
@@ -42,21 +39,6 @@ Work experience
   * Pontifical Catholic University of Chile, Santiago, Chile
   * Assisted in various courses, including Digital Communications Networks, Telecommunications, Electromagnetic Theory, Electronics, Programmable Electronic Systems, and Signals and Systems.
   * Conducted teaching sessions, graded assessments, prepared materials, and resolved student queries.
-
-<!-- * Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git -->
   
 Skills
 ======
@@ -66,12 +48,6 @@ Skills
 * Databases: PostgreSQL, MongoDB, ArangoDB.
 * AI & Cloud: OpenAI API, Amazon Bedrock, Hugging Face, AWS Lambda.
 * Architecture: SOA, Microservices, Multi-Agent Systems.
-<!-- * Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3 -->
 
 Certifications
 ======
@@ -81,25 +57,3 @@ Certifications
   * Hands-on Introduction to Linux Commands and Shell Scripting, March 2024
   * C Programming for Beginners, March 2023
   * Fundamentals of VHDL and FPGA Development, February 2023
-
-<!-- Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
