@@ -1,20 +1,16 @@
 ---
-title: "Teaching experience 2"
+title: "Teaching Assistant - Telecommunications"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+type: "Undergraduate course"
+permalink: /teaching/telecommunications
+venue: "Pontifical Catholic University of Chile, Department of Electrical Engineering"
+date: 2021-01-01
+location: "Santiago, Chile"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+I supported the IEE2513 Telecommunications course by assisting students in topics such as signal transmission, network architecture, and data communication.
 
-Heading 1
+Responsibilities
 ======
-
-Heading 2
-======
-
-Heading 3
-======
+* Evaluated student assignments and provided feedback.
+* Assisted with course material preparation.
