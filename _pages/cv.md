@@ -11,10 +11,11 @@ redirect_from:
 Education
 ======
 * B.Sc. in Electrical Engineering, Minor in Electronics and Telecommunications, Pontificia Universidad Católica de Chile, 2018 - 2024 (GPA: 3.6/4.0)
+* Graduated with the professional degree of Ingeniero Civil Electricista (equivalent to a combined Bachelor’s and professional Engineering degree).
 
 Work experience
 ======
-* March 2025 - Present: 
+* March 2025 - Present: Software Engineer 
   * Laboratory of Cyber-Physical Systems, Pontifical Catholic University of Chile
   * Research and development of AI-driven software solutions.
   * Currently working on development of applications that require real-time interactions.

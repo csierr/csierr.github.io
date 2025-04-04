@@ -15,6 +15,10 @@ I am currently dedicated to researching and developing AI-driven software soluti
 
 ## Experience and Interests
 
-I recently worked at Infosys as an AI Engineering Intern, where I designed a multi-agent system for Text-to-SQL translation using LangChain and LangGraph, enabling natural language queries to be processed and executed on databases. Previously, I developed an LLM-powered complaint classification system as part of my thesis project, leveraging natural language processing to automate and improve categorization. Before that, I worked on optimizing firmware for IoT networks, enhancing efficiency and communication in embedded systems.
+I currently work as a Software Engineer at the Laboratory of Cyber-Physical Systems (Pontifical Catholic University of Chile), where I focus on research and development of AI-powered software solutions—particularly applications involving real-time interaction.
+
+Previously, I worked at Infosys as an AI Engineering Intern, where I designed a multi-agent system for Text-to-SQL translation using LangChain and LangGraph, enabling natural language queries to be processed and executed on databases.
+
+As part of my thesis project, I developed an LLM-powered complaint classification system, leveraging natural language processing to automate and improve categorization. Earlier on, I worked on optimizing firmware for IoT networks, enhancing efficiency and communication in embedded systems.
 
 I am always expanding my knowledge—currently reading Designing Machine Learning Systems by Chip Huyen—and I aspire to pursue a master’s or PhD in the future. In the meantime I’m focused on growing as an engineer, solving meaningful challenges, and having fun along the way!
