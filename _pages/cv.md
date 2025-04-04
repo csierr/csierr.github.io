@@ -10,7 +10,7 @@ redirect_from:
 
 Education
 ======
-* B.Sc. in Electrical Engineering, Minor in Electronics and Telecommunications, Pontificia Universidad Católica de Chile, 2018 - 2024 (GPA: 3.6/4.0)
+* B.Sc. in Electrical Engineering, Minor in Electronics and Telecommunications, Pontifical Catholic University of Chile, 2018 - 2024 (GPA: 3.6/4.0)
 * Graduated with the professional degree of Ingeniero Civil Electricista (equivalent to a combined Bachelor’s and professional Engineering degree).
 
 Work experience
