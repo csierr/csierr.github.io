@@ -1,17 +1,17 @@
 ---
-title: "Teaching Assistant - Electromagnetic Theory"
+title: "Teaching Assistant - Electronics"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/electromagnetic-theory
+permalink: /teaching/electronics
 venue: "Pontifical Catholic University of Chile, Department of Electrical Engineering"
-date: 2022-01-01
+date: 2023-01-01
 location: "Santiago, Chile"
 ---
 
-As a teaching assistant for Electromagnetic Theory, I helped students grasp fundamental electromagnetic concepts and applications.
+My role in the Electronics course included assisting students in circuit analysis, semiconductor devices, and analog/digital electronics.
 
 Responsibilities
 ======
-* Assisted with live problem-solving sessions.
-* Provided feedback on student assignments.
-* Helped develop course material.
+* Conducted problem solving sessions and tutorials.
+* Assisted in grading homework, exams, and oral project presentations.
+* Provided additional support for students via email.

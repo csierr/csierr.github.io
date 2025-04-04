@@ -1,16 +1,17 @@
 ---
-title: "Teaching Assistant - Telecommunications"
+title: "Teaching Assistant - Electromagnetic Theory"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/telecommunications
+permalink: /teaching/electromagnetic-theory
 venue: "Pontifical Catholic University of Chile, Department of Electrical Engineering"
-date: 2021-01-01
+date: 2022-01-01
 location: "Santiago, Chile"
 ---
 
-I supported the IEE2513 Telecommunications course by assisting students in topics such as signal transmission, network architecture, and data communication.
+As a teaching assistant for Electromagnetic Theory, I helped students grasp fundamental electromagnetic concepts and applications.
 
 Responsibilities
 ======
-* Evaluated student assignments and provided feedback.
-* Assisted with course material preparation.
+* Assisted with live problem-solving sessions.
+* Provided feedback on student assignments.
+* Helped develop course material.
