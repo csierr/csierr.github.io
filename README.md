@@ -1,6 +1,6 @@
 # csierr.github.io
 
-Hi! 👋 This repository contains the source code for my personal academic website (work in progress! continuously making
+Hi! 👋 This repository contains the source code for my personal academic website (**work in progress!** continuously making
 improvements), built with the [AcademicPages](https://github.com/academicpages/academicpages.github.io) template — a flexible Jekyll-based theme designed for researchers, students, and professionals.
 
 ### 🌟 About this site

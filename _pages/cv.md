@@ -45,7 +45,7 @@ Skills
 ======
 * Programming Languages: Python, C++, C, Bash, VHDL, Verilog, System Verilog, Matlab.
 * Tools: Docker, Microsoft Office, LaTeX, Vivado.
-* Frameworks: Flask, LangChain, LangGraph.
+* Frameworks: Flask, LangChain, LangGraph, PyTorch.
 * Databases: PostgreSQL, MongoDB, ArangoDB.
 * AI & Cloud: OpenAI API, Amazon Bedrock, Hugging Face, AWS Lambda.
 * Architecture: SOA, Microservices, Multi-Agent Systems.
