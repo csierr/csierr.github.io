@@ -1,5 +1,5 @@
 ---
-title: "Forecasting Superstore Sales with ARIMA, Prophet"
+title: "Forecasting Superstore Sales with ARIMA, Prophet and Theta"
 excerpt: "Project that explores and forecasts retail sales data using multiple time series models. <br/><a href='https://github.com/csierr/forecasting-superstore-sales' target='_blank'>🔗View on GitHub</a>"
 collection: portfolio
 ---
