@@ -15,7 +15,7 @@ Education
 
 Work experience
 ======
-* March 2025 - Present: Software Engineer 
+* March 2025 - Present: Development Engineer 
   * Laboratory of Cyber-Physical Systems, Pontifical Catholic University of Chile
   * Research and development of AI-driven software solutions.
   * Currently working on development of applications that require real-time interactions.
