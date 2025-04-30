@@ -1,13 +1,13 @@
 ---
-title: "Forecasting Superstore Sales with ARIMA, Prophet and Theta"
-excerpt: "Project that explores and forecasts retail sales data using multiple time series models. <br/><a href='https://github.com/csierr/forecasting-superstore-sales' target='_blank'>🔗View on GitHub</a>"
+title: "Realtime Voice and Text Chatbot with OpenAI and FastAPI"
+excerpt: "Local chatbot app that interacts with OpenAI’s Realtime API via text and voice, powered by FastAPI and WebSockets. <br/><a href='https://github.com/csierr/realtime-voice-chatbot' target='_blank'>🔗View on GitHub</a>"
 collection: portfolio
 ---
 
-This project focuses on analyzing and forecasting monthly sales from a retail dataset using models like Theta Forecaster, SARIMA, and Prophet.
+This project consists of a local application that allows users to chat with an OpenAI assistant through both **text and voice**, using the Realtime API.
 
-It covers EDA, data preprocessing, and a detailed evaluation of forecasting performance with metrics such as MAPE, MAE, and R².
+Built with **FastAPI**, it integrates **WebSocket-based communication** and will support audio input/output for a more natural interaction. The text interaction module is fully working, and the voice conversation pipeline is currently under development.
 
-Perfect for those exploring practical applications of time series models and comparing their behavior on real data.
+This project explores real-time communication with LLMs, voice interface design, and asynchronous backend architecture.
 
-👉[Check out the GitHub repo](https://github.com/csierr/forecasting-superstore-sales)
+👉 [Check out the GitHub repo](https://github.com/csierr/realtime-voice-chatbot)
