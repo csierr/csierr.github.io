@@ -14,7 +14,7 @@ I am currently dedicated to researching and developing AI-driven software soluti
 
 ## Experience and Interests
 
-I currently work as a Software Engineer at the Laboratory of Cyber-Physical Systems (Pontifical Catholic University of Chile), where I focus on research and development of AI-powered software solutions—particularly applications involving real-time interaction.
+I currently work as a Development Engineer at the Laboratory of Cyber-Physical Systems (Pontifical Catholic University of Chile), where I focus on research and development of AI-powered software solutions—particularly applications involving real-time interaction.
 
 Previously, I worked at Infosys as an AI Engineering Intern, where I designed a multi-agent system for Text-to-SQL translation using LangChain and LangGraph, enabling natural language queries to be processed and executed on databases.
 
