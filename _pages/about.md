@@ -3,18 +3,20 @@ permalink: /
 author_profile: true
 redirect_from: 
   - /about/
-  - /about.html
+ # - /about.html
 ---
 
 ## About Me 
 
 Hello! I’m Catalina Sierra, an engineer passionate about AI, software development, and solving real-world problems through technology. My journey began by programming microcontrollers at university (yes, IoT still has a place in my heart!), but over time, my focus shifted towards AI, NLP, and LLMs.
 
-I am currently dedicated to researching and developing AI-driven software solutions, leveraging technologies such as OpenAI APIs, open-source LLMs, and process automation to enhance efficiency and optimize workflows. My primary goal is not only to advance technological innovation but also to learn continuously and contribute to meaningful solutions that make a real impact on people's lives.
+I am currently dedicated to researching and developing AI-driven software solutions, leveraging technologies and process automation to enhance efficiency and optimize workflows. My primary goal is not only to advance technological innovation but also to learn continuously and contribute to meaningful solutions that make a real impact on people's lives.
 
 ## Experience and Interests
 
-I currently work as a Development Engineer at the Laboratory of Cyber-Physical Systems (Pontifical Catholic University of Chile), where I focus on research and development of AI-powered software solutions—particularly applications involving real-time interaction.
+I am currently working as an AI Engineer at ClickIT: DevOps & Software Development, where I focus on building intelligent agents and chatbot solutions. My work involves leveraging LLMs, process automation, and real-time interactions to create smart systems that add value and efficiency to various applications.
+
+Previously, I worked as a Development Engineer at the Laboratory of Cyber-Physical Systems (Pontifical Catholic University of Chile), where I focused on research and development of AI-powered software solutions, particularly applications involving real-time interaction in the health care sector.
 
 Previously, I worked at Infosys as an AI Engineering Intern, where I designed a multi-agent system for Text-to-SQL translation using LangChain and LangGraph, enabling natural language queries to be processed and executed on databases.
 
