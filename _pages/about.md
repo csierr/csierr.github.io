@@ -6,7 +6,7 @@ redirect_from:
  # - /about.html
 ---
 
-<!-- ## About Me  -->
+## About Me 
 
 Hello! I’m Catalina Sierra, an engineer passionate about AI, software development, and solving real-world problems through technology. My journey began by programming microcontrollers at university (yes, IoT still has a place in my heart!), but over time, my focus shifted towards AI, NLP, and LLMs.
 
