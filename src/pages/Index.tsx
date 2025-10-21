@@ -176,7 +176,7 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mb-3">
                 Performed live hands-on laboratory and study sessions with embedded systems, circuit design, and microcontrollers. For the course the Zybo Z7-10 board was used.
               </p>
-            </div>
+            </div> 
 
             <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
               <h3 className="text-xl font-semibold text-primary mb-2">
