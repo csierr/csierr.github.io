@@ -166,9 +166,6 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mb-3">
                 Assisted students in understanding network protocols, digital modulation techniques, and communication systems.
               </p>
-              <span className="text-xs px-3 py-1 bg-primary/20 text-primary rounded">
-                500+ students
-              </span>
             </div>
 
             <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
@@ -179,9 +176,6 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mb-3">
                 Performed live hands-on laboratory and study sessions with embedded systems, circuit design, and microcontrollers. For the course the Zybo Z7-10 board was used.
               </p>
-              <span className="text-xs px-3 py-1 bg-primary/20 text-primary rounded">
-                200+ students
-              </span>
             </div>
 
             <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
@@ -192,9 +186,6 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mb-3">
                 Assisted students in topics such as signal transmission, network architecture, and data communication.
               </p>
-              <span className="text-xs px-3 py-1 bg-primary/20 text-primary rounded">
-                200+ students
-              </span>
             </div>
 
             <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
@@ -205,9 +196,6 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mb-3">
                 Performed live study sessions on circuit design and analysis, and semiconductor devices.
               </p>
-              <span className="text-xs px-3 py-1 bg-primary/20 text-primary rounded">
-                200+ students
-              </span>
             </div>
 
             <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
@@ -218,9 +206,6 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mb-3">
                 Performed live study sessions in topics related to electromagnetic theory, including Maxwell's equations, wave propagation, and antenna design.
               </p>
-              <span className="text-xs px-3 py-1 bg-primary/20 text-primary rounded">
-                200+ students
-              </span>
             </div>
 
             <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
