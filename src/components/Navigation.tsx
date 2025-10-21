@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
+import useTheme from '../hooks/useTheme';
 
 const navItems = [
   { id: 'about', label: 'About Me' },
@@ -10,6 +11,20 @@ const navItems = [
   { id: 'portfolio', label: 'Portfolio' },
   { id: 'contact', label: 'Contact' },
 ];
+
+function ThemeToggle({ small }: { small?: boolean }) {
+  const { theme, toggle } = useTheme();
+  const size = small ? 16 : 20;
+  return (
+    <button
+      onClick={toggle}
+      aria-label="Toggle theme"
+      className={`p-2 rounded transition-all duration-200 hover:opacity-90 ${small ? '' : 'shadow-sm'}`}
+    >
+      {theme === 'dark' ? <Moon size={size} /> : <Sun size={size} />}
+    </button>
+  );
+}
 
 export const Navigation = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -49,31 +64,42 @@ export const Navigation = () => {
           <div className="flex items-center gap-2">
             <span className="text-primary text-lg font-bold">&gt;_</span>
           </div>
-          <div className="flex gap-6">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`px-3 py-2 rounded transition-all duration-300 font-mono text-sm ${
-                  activeSection === item.id
-                    ? 'text-primary border-b-2 border-primary'
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
+          <div className="flex items-center gap-4">
+            <div className="flex gap-6">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`px-3 py-2 rounded transition-all duration-300 font-mono text-sm ${
+                    activeSection === item.id
+                      ? 'text-primary border-b-2 border-primary'
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+            <div className="flex items-center">
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </nav>
 
       {/* Mobile Navigation Toggle */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-6 right-6 z-50 p-3 bg-card terminal-border rounded glow-primary"
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+      <div className="md:hidden fixed top-6 right-6 z-50 flex items-center gap-2">
+        <div className="p-1 bg-card terminal-border rounded">
+          <ThemeToggle small />
+        </div>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="p-3 bg-card terminal-border rounded glow-primary"
+          aria-label="Open navigation"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
 
       {/* Mobile Navigation Menu */}
       {isOpen && (

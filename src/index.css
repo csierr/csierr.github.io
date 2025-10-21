@@ -7,8 +7,61 @@ All colors MUST be HSL.
 */
 
 @layer base {
+  /* Light theme (default) */
   :root {
-    /* Terminal Dark Theme */
+    --background: 220 10% 98%;
+    --foreground: 220 8% 12%;
+
+    --card: 220 10% 100%;
+    --card-foreground: 220 8% 12%;
+
+    --popover: 220 10% 100%;
+    --popover-foreground: 220 8% 12%;
+
+    /* Electric Blue Primary */
+    --primary: 195 100% 40%;
+    --primary-foreground: 220 10% 98%;
+    --primary-glow: 195 100% 55%;
+
+    /* Light Secondary */
+    --secondary: 220 10% 95%;
+    --secondary-foreground: 220 8% 12%;
+
+    /* Muted Grays */
+    --muted: 220 10% 92%;
+    --muted-foreground: 220 8% 40%;
+
+    /* Red Accent */
+    --accent: 0 75% 50%;
+    --accent-foreground: 220 8% 12%;
+
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 220 8% 12%;
+
+    /* Borders with Terminal Vibe */
+    --border: 220 8% 85%;
+    --input: 220 8% 94%;
+    --ring: 195 100% 40%;
+
+    --radius: 0.25rem;
+
+    /* Grid and Glow Effects */
+    --grid-color: 220 8% 92%;
+    --glow-primary: 195 100% 45%;
+    --glow-accent: 0 75% 50%;
+
+    --sidebar-background: 220 8% 100%;
+    --sidebar-foreground: 220 8% 12%;
+    --sidebar-primary: 195 100% 40%;
+    --sidebar-primary-foreground: 220 10% 98%;
+    --sidebar-accent: 220 10% 96%;
+    --sidebar-accent-foreground: 220 8% 12%;
+    --sidebar-border: 220 8% 90%;
+    --sidebar-ring: 195 100% 40%;
+  }
+
+  /* Dark theme variables (applied when .dark is present on <html>) */
+  .dark {
     --background: 220 20% 6%;
     --foreground: 210 15% 92%;
 
