@@ -162,7 +162,7 @@ const Index = () => {
               <h3 className="text-xl font-semibold text-primary mb-2">
                 Digital Communications Networks IEE2544
               </h3>
-              <p className="text-muted-foreground mb-3">Online Course | 2024 </p>
+              <p className="text-muted-foreground mb-3">Pontifical Catholic University of Chile | 2024 </p>
               <p className="text-sm text-muted-foreground mb-3">
                 Assisted students in understanding network protocols, digital modulation techniques, and communication systems.
               </p>
@@ -172,7 +172,7 @@ const Index = () => {
               <h3 className="text-xl font-semibold text-primary mb-2">
                 Programmable Electronic Systems IEE2463
               </h3>
-              <p className="text-muted-foreground mb-3">Workshop Series | 2023 </p>
+              <p className="text-muted-foreground mb-3">Pontifical Catholic University of Chile | 2023 </p>
               <p className="text-sm text-muted-foreground mb-3">
                 Performed live hands-on laboratory and study sessions with embedded systems, circuit design, and microcontrollers. For the course the Zybo Z7-10 board was used.
               </p>
@@ -182,7 +182,7 @@ const Index = () => {
               <h3 className="text-xl font-semibold text-primary mb-2">
                 Telecommunications IEE2513
               </h3>
-              <p className="text-muted-foreground mb-3">Workshop Series | 2023 - 2024</p>
+              <p className="text-muted-foreground mb-3">Pontifical Catholic University of Chile | 2023 - 2024</p>
               <p className="text-sm text-muted-foreground mb-3">
                 Assisted students in topics such as signal transmission, network architecture, and data communication.
               </p>
