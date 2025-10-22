@@ -33,8 +33,9 @@ const Index = () => {
           
           <div className="terminal-border bg-card/50 p-8 rounded mb-6">
             <p className="text-foreground leading-relaxed mb-4">
-              I'm an engineer passionate and constantly learning about AI, software development, and solving real-world problems through technology. 
-              My journey began by programming microcontrollers (IoT still has a place in my heart!), but over time, my focus shifted towards ML, NLP, and LLMs.
+              I'm an engineer passionate (and constantly learning!) about AI, software development, and solving real-world problems through technology. 
+              My background blends hardware and software, I started programming microcontrollers and working on IoT projects, 
+              and later shifted toward artificial intelligence, focusing on machine learning, NLP, and large language models.
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
@@ -56,6 +57,50 @@ const Index = () => {
             >
               View work
             </a>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section id="experience" className="py-12 section-fade-in">
+          <h2 className="text-4xl font-bold mb-8 text-foreground">
+            <span className="text-accent">//</span> Experience
+          </h2>
+          
+          <div className="space-y-0">
+            <TimelineItem
+              year="May 2025 - Present"
+              title="AI Engineer"
+              organization="ClickIT DevOps and Software Development"
+              description="Backend development and integration of artificial intelligence into software pipelines. Collaboration with multidisciplinary teams. Responsible for testing, evaluating, and presenting technical demos of solutions to stakeholders."
+            />
+            
+            <TimelineItem
+              year="March 2025 - May 2025"
+              title="Development Engineer"
+              organization="Cyber-Physical Systems Laboratory"
+              description="Designed and integrated AI-driven software pipelines with real-time interaction, particularly applications involving real-time interaction (TTS, STT, Speech-to-Speech), with Retrieval Augmented Generation (RAG) integration."
+            />
+            
+            <TimelineItem
+              year="January 2025 - March 2025"
+              title="AI Engineer Intern"
+              organization="Infosys Limited Bangalore"
+              description="Developed an AI-based solution for a Text-to-SQL problem. The system was designed to work with multiple data sources and handle error management and parallel query execution. A multi-agent architecture was implemented using LangGraph and LangChain."
+            />
+
+            <TimelineItem
+              year="July 2025 - December 2025"
+              title="Thesis Project"
+              organization="Cyber-Physical Systems Laboratory"
+              description="Developed and deployed an automatic system for classification of complaints received by the chilean Superintendency of Electricity and Fuels based on Large Language Models (LLMs). The work included evaluation and fine-tuning of different LLMs (encoder-only, encoder-decoder, and decoder-only), and implementation of a pilot in web app format that integrates the classification system, data visualization, statistics, and generation of processing requests, optimizing its management in the organization."
+            />
+
+            <TimelineItem
+              year="July 2025 - December 2025"
+              title="IoT Intern"
+              organization="IoW Labs"
+              description="Improved firmware efficiency in ESP32-based environmental sensors using deep sleep routines, and implemented a LoRaWAN network (gateway + nodes) with integration to The Things Network (TTN)."
+            />
           </div>
         </section>
 
@@ -107,46 +152,69 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Experience Section */}
-        <section id="experience" className="py-12 section-fade-in">
+        {/* Tools Section */}
+        <section id="tools" className="py-12 section-fade-in">
           <h2 className="text-4xl font-bold mb-8 text-foreground">
-            <span className="text-accent">//</span> Experience
+            <span className="text-accent">//</span> Tools & Technologies
           </h2>
           
-          <div className="space-y-0">
-            <TimelineItem
-              year="May 2025 - Present"
-              title="AI Engineer"
-              organization="ClickIT DevOps and Software Development"
-              description="Backend development and integration of artificial intelligence into software pipelines. Collaboration with multidisciplinary teams. Responsible for testing, evaluating, and presenting technical demos of solutions to stakeholders."
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <ToolCard icon={Code2} name="Python" level="Advanced" />
+            <ToolCard icon={Cloud} name="AWS / Google Cloud" level="Intermediate" />
+            <ToolCard icon={Database} name="PostgreSQL / MongoDB" level="Intermediate" />
+            <ToolCard icon={Brain} name="PyTorch" level="Intermediate" />
+            <ToolCard icon={Server} name="FastAPI / Flask" level="Intermediate" />
+            <ToolCard icon={Cpu} name="Docker" level="Intermediate" />
+          </div>
+
+          <div className="terminal-border bg-card/50 p-6 rounded">
+            <h3 className="text-lg font-semibold text-primary mb-3">Additional Skills</h3>
+            <div className="flex flex-wrap gap-2">
+              {['Git', 'REST', 'Linux', 'Shell scripting', 'Langfuse', 'DeepEval', 'Redis', 'Celery', 'JavaScript', 'HTML', 'Tailwind CSS', 'MySQL', 'SQLite', 'Google Cloud Run', 'Google Composer'].map((skill) => (
+                <span
+                  key={skill}
+                  className="text-xs px-3 py-1 bg-secondary text-foreground rounded border border-border hover:border-primary transition-colors"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Portfolio Section */}
+        <section id="portfolio" className="py-12 section-fade-in">
+          <h2 className="text-4xl font-bold mb-8 text-foreground">
+            <span className="text-accent">//</span> Portfolio
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <ProjectCard
+              title="Realtime Chatbot"
+              description="Local app that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
+              tech={['Python','FastAPI', 'WebSocket', 'OpenAI', 'JavaScript', 'HTML', 'CSS']}
+              github="https://github.com/csierr/realtime-voice-chatbot"
             />
             
-            <TimelineItem
-              year="March 2025 - May 2025"
-              title="Development Engineer"
-              organization="Cyber-Physical Systems Laboratory"
-              description="Research and development of AI-powered software solutions, particularly applications involving real-time interaction (TTS, STT, Speech-to-Speech), with Retrieval Augmented Generation (RAG) integration."
+            <ProjectCard
+              title="Finetuning BETO"
+              description="Fine-tuning of the BETO model (BERT-based model for Spanish) to classify sentences into school subjects. It includes training, evaluation, and integration into a local application."
+              tech={['Python', 'PyTorch', 'Transformers', 'JavaScript', 'HTML']}
+              github="https://github.com/csierr/finetuning-beto-for-spanish-text-classification"
             />
             
-            <TimelineItem
-              year="January 2025 - March 2025"
-              title="AI Engineer Intern"
-              organization="Infosys Limited Bangalore"
-              description="Development of an AI-based solution for a Text-to-SQL problem. The system was designed to work with multiple data sources and handle error management and parallel query execution. A multi-agent architecture was implemented using LangGraph and LangChain."
+            <ProjectCard
+              title="Forecasting Superstore Sales"
+              description="Project for analysis and forecast of monthly sales using models like Theta Forecaster, SARIMA, and Prophet. It covers EDA, data pre-processing, and evaluation of forecasting performance (MAPE, MAE, and R²)."
+              tech={['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Statsmodels', 'Prophet', 'Arima']}
+              github="https://github.com/csierr/forecasting-superstore-sales"
             />
-
-            <TimelineItem
-              year="July 2025 - December 2025"
-              title="Thesis Project"
-              organization="Cyber-Physical Systems Laboratory"
-              description="Development of an automatic system for classification of complaints received by the chilean Superintendency of Electricity and Fuels based on Large Language Models (LLMs). The work included evaluation and fine-tuning of different LLMs (encoder-only, encoder-decoder, and decoder-only), and implementation of a pilot in web app format that integrates the classification system, data visualization, statistics, and generation of processing requests, optimizing its management in the organization."
-            />
-
-            <TimelineItem
-              year="July 2025 - December 2025"
-              title="IoT Intern"
-              organization="IoW Labs"
-              description="Development of efficient firmware to improve energy efficiency in an environmental monitoring sensor network using Deep Sleep routines in ESP32, and implementation of a LoRaWAN network (gateway + nodes) with integration to The Things Network (TTN)."
+            
+            <ProjectCard
+              title="Personal Finances App"
+              description="Project to track personal expenses through a dedicated UI and Telegram bot, integrating OpenAI for enhanced user interaction and financial insights."
+              tech={['Python', 'Flask', 'MySQL', 'JavaScript', 'HTML', 'Telegram API', 'OpenAI']}
+              github="https://github.com/tsunayoshi21/catitaycris_expenses_app"
             />
           </div>
         </section>
@@ -220,73 +288,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Tools Section */}
-        <section id="tools" className="py-12 section-fade-in">
-          <h2 className="text-4xl font-bold mb-8 text-foreground">
-            <span className="text-accent">//</span> Tools & Technologies
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-            <ToolCard icon={Code2} name="Python" level="Advanced" />
-            <ToolCard icon={Cloud} name="AWS / Google Cloud" level="Intermediate" />
-            <ToolCard icon={Database} name="PostgreSQL / MongoDB" level="Intermediate" />
-            <ToolCard icon={Brain} name="PyTorch" level="Intermediate" />
-            <ToolCard icon={Server} name="FastAPI / Flask" level="Intermediate" />
-            <ToolCard icon={Cpu} name="Docker" level="Intermediate" />
-          </div>
-
-          <div className="terminal-border bg-card/50 p-6 rounded">
-            <h3 className="text-lg font-semibold text-primary mb-3">Additional Skills</h3>
-            <div className="flex flex-wrap gap-2">
-              {['Git', 'REST', 'Linux', 'Shell scripting', 'Langfuse', 'DeepEval', 'Redis', 'Celery', 'JavaScript', 'HTML', 'Tailwind CSS', 'MySQL', 'SQLite', 'Google Cloud Run', 'Google Composer'].map((skill) => (
-                <span
-                  key={skill}
-                  className="text-xs px-3 py-1 bg-secondary text-foreground rounded border border-border hover:border-primary transition-colors"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Portfolio Section */}
-        <section id="portfolio" className="py-12 section-fade-in">
-          <h2 className="text-4xl font-bold mb-8 text-foreground">
-            <span className="text-accent">//</span> Portfolio
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <ProjectCard
-              title="Realtime Chatbot"
-              description="Local app that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
-              tech={['Python','FastAPI', 'WebSocket', 'OpenAI', 'JavaScript', 'HTML', 'CSS']}
-              github="https://github.com/csierr/realtime-voice-chatbot"
-            />
-            
-            <ProjectCard
-              title="Finetuning BETO"
-              description="Fine-tuning of the BETO model (BERT-based model for Spanish) to classify sentences into school subjects. It includes training, evaluation, and integration into a local application."
-              tech={['Python', 'PyTorch', 'Transformers', 'JavaScript', 'HTML']}
-              github="https://github.com/csierr/finetuning-beto-for-spanish-text-classification"
-            />
-            
-            <ProjectCard
-              title="Forecasting Superstore Sales"
-              description="Project for analysis and forecast of monthly sales using models like Theta Forecaster, SARIMA, and Prophet. It covers EDA, data pre-processing, and evaluation of forecasting performance (MAPE, MAE, and R²)."
-              tech={['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Statsmodels', 'Prophet', 'Arima']}
-              github="https://github.com/csierr/forecasting-superstore-sales"
-            />
-            
-            <ProjectCard
-              title="Personal Finances App"
-              description="Project to track personal expenses through a dedicated UI and Telegram bot, integrating OpenAI for enhanced user interaction and financial insights."
-              tech={['Python', 'Flask', 'MySQL', 'JavaScript', 'HTML', 'Telegram API', 'OpenAI']}
-              github="https://github.com/tsunayoshi21/catitaycris_expenses_app"
-            />
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section id="contact" className="py-12 section-fade-in">
           <h2 className="text-4xl font-bold mb-8 text-foreground">
@@ -295,7 +296,7 @@ const Index = () => {
           
           <div className="terminal-border bg-card/50 p-8 rounded mb-8">
             <p className="text-xl text-muted-foreground mb-8">
-              Let's connect and discuss opportunities, projects, or just talk tech.
+              Let's connect and discuss opportunities, projects, or just talk tech!
             </p>
             
             <div className="space-y-4">

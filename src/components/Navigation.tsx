@@ -3,12 +3,12 @@ import { Menu, X, Sun, Moon } from 'lucide-react';
 import useTheme from '../hooks/useTheme';
 
 const navItems = [
-  { id: 'about', label: 'About Me' },
-  { id: 'studies', label: 'Studies' },
+  { id: 'about', label: 'About' },
   { id: 'experience', label: 'Experience' },
-  { id: 'teaching', label: 'Teaching' },
+  { id: 'studies', label: 'Studies' },
   { id: 'tools', label: 'Tools' },
   { id: 'portfolio', label: 'Portfolio' },
+  { id: 'teaching', label: 'Teaching' },
   { id: 'contact', label: 'Contact' },
 ];
 
