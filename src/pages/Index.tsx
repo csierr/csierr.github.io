@@ -1,3 +1,35 @@
+// BookTooltip component for showing book cover on hover
+import { useState } from 'react';
+
+const bookImages: Record<string, string> = {
+  'Designing Machine Learning Systems': '/books/designing-ml-systems.jpg',
+  'AI Engineering': '/books/ai-engineering.jpg',
+  'Python for Data Analysis': '/books/python-for-data-analysis.jpg',
+  'Grokking Algorithms': '/books/grokking-algorithms.jpg',
+  'A Court of Thorns and Roses': '/books/acotar.jpg',
+  'Before the Coffee Gets Cold': '/books/before-coffee.jpg',
+  'Fairy Tale': '/books/fairy-tale.jpg',
+  'Fairy Oak': '/books/fairy-oak.jpg',
+};
+
+function BookTooltip({ title, children }: { title: string; children: React.ReactNode }) {
+  const [show, setShow] = useState(false);
+  return (
+    <span
+      className="relative cursor-pointer"
+      onMouseEnter={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
+    >
+      {children}
+      {show && bookImages[title] && (
+        <span className="absolute left-full top-1/2 z-50 ml-4 -translate-y-1/2 bg-card border border-border rounded shadow-lg p-2 w-40 flex flex-col items-center">
+          <img src={bookImages[title]} alt={title + ' cover'} className="w-40 h-53 object-cover rounded mb-2" />
+          <span className="text-xs text-muted-foreground text-center">{title}</span>
+        </span>
+      )}
+    </span>
+  );
+}
 import { Navigation } from '@/components/Navigation';
 import { ProjectCard } from '@/components/ProjectCard';
 import { TimelineItem } from '@/components/TimelineItem';
@@ -170,7 +202,7 @@ const Index = () => {
           <div className="terminal-border bg-card/50 p-6 rounded">
             <h3 className="text-lg font-semibold text-primary mb-3">Additional Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {['Git', 'REST', 'Linux', 'Shell scripting', 'Langfuse', 'DeepEval', 'Redis', 'Celery', 'JavaScript', 'HTML', 'Tailwind CSS', 'MySQL', 'SQLite', 'Google Cloud Run', 'Google Composer'].map((skill) => (
+              {['Git', 'REST', 'Linux', 'Shell scripting', 'Langfuse', 'DeepEval', 'Redis', 'Celery', 'JavaScript', 'HTML', 'MySQL', 'SQLite', 'Google Cloud Run', 'Google Composer'].map((skill) => (
                 <span
                   key={skill}
                   className="text-xs px-3 py-1 bg-secondary text-foreground rounded border border-border hover:border-primary transition-colors"
@@ -298,10 +330,10 @@ const Index = () => {
               A few books that I've loved and that have shaped how I think about engineering and about building systems that actually work in the real world:
             </p>
             <ul className="list-disc list-inside space-y-2 text-foreground">
-              <li><strong>Designing Machine Learning Systems</strong> by Chip Huyen</li>
-              <li><strong>AI Engineering</strong> by Chip Huyen</li>
-              <li><strong>Python for Data Analysis</strong> by Wes McKinney</li>
-              <li><strong>Grokking Algorithms</strong> by Aditya Bhargava</li>
+              <li><BookTooltip title="Designing Machine Learning Systems"><strong>Designing Machine Learning Systems by Chip Huyen</strong></BookTooltip></li>
+              <li><BookTooltip title="AI Engineering"><strong>AI Engineering by Chip Huyen</strong></BookTooltip></li>
+              <li><BookTooltip title="Python for Data Analysis"><strong>Python for Data Analysis by Wes McKinney</strong></BookTooltip></li>
+              <li><BookTooltip title="Grokking Algorithms"><strong>Grokking Algorithms by Aditya Bhargava</strong></BookTooltip></li>
             </ul>
           </div>
         </section>
@@ -316,10 +348,10 @@ const Index = () => {
               Not everything I read is about code, here are a some non-technical reads that I also really enjoyed:
             </p>
             <ul className="list-disc list-inside space-y-2 text-foreground">
-              <li><strong>A Court of Thorns and Roses</strong> series by Sarah J. Maas</li>
-              <li><strong>Before the Coffee Gets Cold</strong> series by Toshikazu Kawaguchi</li>
-              <li><strong>Fairy Tale</strong> by Stephen King</li>
-              <li><strong>Fairy Oak</strong> series by Elisabetta Gnone</li>
+            <li><BookTooltip title="A Court of Thorns and Roses"><strong>A Court of Thorns and Roses series by Sarah J. Maas</strong></BookTooltip></li>
+            <li><BookTooltip title="Before the Coffee Gets Cold"><strong>Before the Coffee Gets Cold series by Toshikazu Kawaguchi</strong></BookTooltip></li>
+            <li><BookTooltip title="Fairy Tale"><strong>Fairy Tale by Stephen King</strong></BookTooltip></li>
+            <li><BookTooltip title="Fairy Oak"><strong>Fairy Oak series by Elisabetta Gnone</strong></BookTooltip></li>
             </ul>
           </div>
         </section>
