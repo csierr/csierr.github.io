@@ -9,6 +9,7 @@ const navItems = [
   { id: 'tools', label: 'Tools' },
   { id: 'portfolio', label: 'Portfolio' },
   { id: 'teaching', label: 'Teaching' },
+  { id: 'books', label: 'Book Recs' },
   { id: 'contact', label: 'Contact' },
 ];
 

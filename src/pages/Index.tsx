@@ -288,6 +288,42 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Book Recommendations Section */}
+        <section id="books" className="py-12 section-fade-in">
+          <h2 className="text-4xl font-bold mb-8 text-foreground">
+            <span className="text-accent">//</span> Book Recs
+          </h2>
+          <div className="terminal-border bg-card/50 p-8 rounded mb-8">
+            <p className="text-xl text-muted-foreground mb-6">
+              A few books that I've loved and that have shaped how I think about engineering and about building systems that actually work in the real world:
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-foreground">
+              <li><strong>Designing Machine Learning Systems</strong> by Chip Huyen</li>
+              <li><strong>AI Engineering</strong> by Chip Huyen</li>
+              <li><strong>Python for Data Analysis</strong> by Wes McKinney</li>
+              <li><strong>Grokking Algorithms</strong> by Aditya Bhargava</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Off-Topic Reads Section */}
+        <section id="off-topic-books" className="py-12 section-fade-in">
+          <h2 className="text-4xl font-bold mb-8 text-foreground">
+            <span className="text-accent">//</span> Off-topic Reads
+          </h2>
+          <div className="terminal-border bg-card/50 p-8 rounded mb-8">
+            <p className="text-xl text-muted-foreground mb-6">
+              Not everything I read is about code, here are a some non-technical reads that I also really enjoyed:
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-foreground">
+              <li><strong>A Court of Thorns and Roses</strong> series by Sarah J. Maas</li>
+              <li><strong>Before the Coffee Gets Cold</strong> series by Toshikazu Kawaguchi</li>
+              <li><strong>Fairy Tale</strong> by Stephen King</li>
+              <li><strong>Fairy Oak</strong> series by Elisabetta Gnone</li>
+            </ul>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section id="contact" className="py-12 section-fade-in">
           <h2 className="text-4xl font-bold mb-8 text-foreground">
