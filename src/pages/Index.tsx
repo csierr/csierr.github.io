@@ -223,9 +223,10 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <ProjectCard
               title="Realtime Chatbot"
-              description="Local app that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
+              description="Local application that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
               tech={['Python','FastAPI', 'WebSocket', 'OpenAI', 'JavaScript', 'HTML', 'CSS']}
               github="https://github.com/csierr/realtime-voice-chatbot"
+              image="/projects/realtime-chatbot.png"
             />
             
             <ProjectCard
@@ -233,20 +234,23 @@ const Index = () => {
               description="Fine-tuning of the BETO model (BERT-based model for Spanish) to classify sentences into school subjects. It includes training, evaluation, and integration into a local application."
               tech={['Python', 'PyTorch', 'Transformers', 'JavaScript', 'HTML']}
               github="https://github.com/csierr/finetuning-beto-for-spanish-text-classification"
+              image="/projects/finetuning-beto.png"
             />
             
             <ProjectCard
-              title="Forecasting Superstore Sales"
+              title="Forecasting Store Sales"
               description="Project for analysis and forecast of monthly sales using models like Theta Forecaster, SARIMA, and Prophet. It covers EDA, data pre-processing, and evaluation of forecasting performance (MAPE, MAE, and R²)."
               tech={['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Statsmodels', 'Prophet', 'Arima']}
               github="https://github.com/csierr/forecasting-superstore-sales"
+              image="/projects/forecasting.png"
             />
             
             <ProjectCard
               title="Personal Finances App"
-              description="Project to track personal expenses through a dedicated UI and Telegram bot, integrating OpenAI for enhanced user interaction and financial insights."
+              description="Application to track personal expenses through a dedicated UI and Telegram bot. It integrates OpenAI for enhanced user interaction and financial insights (expenses overview, charts)."
               tech={['Python', 'Flask', 'MySQL', 'JavaScript', 'HTML', 'Telegram API', 'OpenAI']}
               github="https://github.com/tsunayoshi21/catitaycris_expenses_app"
+              image="/projects/finanzas_app.png"
             />
           </div>
         </section>
