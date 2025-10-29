@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local environment files
+ui_unused/
+public/books/
+public/projects/
+index-local-version.html
