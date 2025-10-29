@@ -2,14 +2,14 @@
 import { useState } from 'react';
 
 const bookImages: Record<string, string> = {
-  'Designing Machine Learning Systems': '/books/designing-ml-systems.jpg',
-  'AI Engineering': '/books/ai-engineering.jpg',
-  'Python for Data Analysis': '/books/python-for-data-analysis.jpg',
-  'Grokking Algorithms': '/books/grokking-algorithms.jpg',
-  'A Court of Thorns and Roses': '/books/acotar.jpg',
-  'Before the Coffee Gets Cold': '/books/before-coffee.jpg',
-  'Fairy Tale': '/books/fairy-tale.jpg',
-  'Fairy Oak': '/books/fairy-oak.jpg',
+  'Designing Machine Learning Systems': '/images/designing-ml-systems.jpg',
+  'AI Engineering': '/images/ai-engineering.jpg',
+  'Python for Data Analysis': '/images/python-for-data-analysis.jpg',
+  'Grokking Algorithms': '/images/grokking-algorithms.jpg',
+  'A Court of Thorns and Roses': '/images/acotar.jpg',
+  'Before the Coffee Gets Cold': '/images/before-coffee.jpg',
+  'Fairy Tale': '/images/fairy-tale.jpg',
+  'Fairy Oak': '/images/fairy-oak.jpg',
 };
 
 function BookTooltip({ title, children }: { title: string; children: React.ReactNode }) {
@@ -50,7 +50,7 @@ const Index = () => {
             {/* Profile Picture */}
             <div className="w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
               <Avatar className="w-full h-full terminal-border bg-card flex items-center justify-center glow-primary">
-                <AvatarImage src="/profile.jpg" alt="Profile picture" />
+                <AvatarImage src="/images/profile.jpg" alt="Profile picture" />
                 <AvatarFallback>YC</AvatarFallback>
               </Avatar>
             </div>
@@ -226,7 +226,7 @@ const Index = () => {
               description="Local application that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
               tech={['Python','FastAPI', 'WebSocket', 'OpenAI', 'JavaScript', 'HTML', 'CSS']}
               github="https://github.com/csierr/realtime-voice-chatbot"
-              image="/projects/realtime-chatbot.png"
+              image="/images/realtime-chatbot.png"
             />
             
             <ProjectCard
@@ -234,7 +234,7 @@ const Index = () => {
               description="Fine-tuning of the BETO model (BERT-based model for Spanish) to classify sentences into school subjects. It includes training, evaluation, and integration into a local application."
               tech={['Python', 'PyTorch', 'Transformers', 'JavaScript', 'HTML']}
               github="https://github.com/csierr/finetuning-beto-for-spanish-text-classification"
-              image="/projects/finetuning-beto.png"
+              image="/images/finetuning-beto.png"
             />
             
             <ProjectCard
@@ -242,7 +242,7 @@ const Index = () => {
               description="Project for analysis and forecast of monthly sales using models like Theta Forecaster, SARIMA, and Prophet. It covers EDA, data pre-processing, and evaluation of forecasting performance (MAPE, MAE, and R²)."
               tech={['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Statsmodels', 'Prophet', 'Arima']}
               github="https://github.com/csierr/forecasting-superstore-sales"
-              image="/projects/forecasting.png"
+              image="/images/forecasting.png"
             />
             
             <ProjectCard
@@ -250,7 +250,7 @@ const Index = () => {
               description="Application to track personal expenses through a dedicated UI and Telegram bot. It integrates OpenAI for enhanced user interaction and financial insights (expenses overview, charts)."
               tech={['Python', 'Flask', 'MySQL', 'JavaScript', 'HTML', 'Telegram API', 'OpenAI']}
               github="https://github.com/tsunayoshi21/catitaycris_expenses_app"
-              image="/projects/finanzas_app.png"
+              image="/images/finanzas_app.png"
             />
           </div>
         </section>
