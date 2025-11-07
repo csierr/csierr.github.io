@@ -8,6 +8,7 @@ const navItems = [
   { id: 'studies', label: 'Studies' },
   { id: 'tools', label: 'Tools' },
   { id: 'portfolio', label: 'Portfolio' },
+  { id: 'publications', label: 'Publications' },
   { id: 'teaching', label: 'Teaching' },
   { id: 'books', label: 'Book Recs' },
   { id: 'contact', label: 'Contact' },

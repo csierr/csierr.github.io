@@ -34,7 +34,7 @@ import { Navigation } from '@/components/Navigation';
 import { ProjectCard } from '@/components/ProjectCard';
 import { TimelineItem } from '@/components/TimelineItem';
 import { ToolCard } from '@/components/ToolCard';
-import { Github, Linkedin, Mail, Terminal, Code2, Database, Brain, Cloud, Server, Cpu } from 'lucide-react';
+import { Github, Linkedin, Mail, Terminal, Code2, Database, Brain, Cloud, Server, Cpu, FileText } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Index = () => {
@@ -221,6 +221,7 @@ const Index = () => {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
+
             <ProjectCard
               title="Realtime Chatbot"
               description="Local application that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
@@ -252,6 +253,44 @@ const Index = () => {
               github="https://github.com/tsunayoshi21/catitaycris_expenses_app"
               image="/images/finanzas_app.png"
             />
+
+            <ProjectCard
+              title="Learning Japanese App"
+              description="A web application for Japanese language learners. It features a translation tool and provides a curated list of study resources available in Chile. Available at: https://jap-app.csierr.cl/"
+              tech={['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Cloudflare', 'Amazon EC2', 'JavaScript', 'HTML', 'CSS']}
+              github="https://github.com/tsunayoshi21/learning-japanese-app"
+              image="/images/learning_japanese.png"
+            />
+          </div>
+        </section>
+
+        {/* Publications Section */}
+        <section id="publications" className="py-12 section-fade-in">
+          <h2 className="text-4xl font-bold mb-8 text-foreground">
+            <span className="text-accent">//</span> Publications
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
+              <h3 className="text-xl font-semibold text-primary mb-2">
+                <a href="https://www.sciencedirect.com/science/article/pii/S2590005625001973" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  An integrated complaint management system based on large language models: Case study in the electric sector
+                </a>
+              </h3>
+              <p className="text-muted-foreground mb-3">Array Journal | Elsevier | 2025</p>
+              <p className="text-sm text-muted-foreground mb-3">
+              This work presents an integrated complaint management system based on large language models (LLMs), applied to the electric sector. The system automates traditionally manual tasks through a service-oriented architecture combining data processing, virtual analysts, and a web application. Evaluations demonstrate its efficiency, robustness, and scalability.
+              </p>
+              <a
+                href="https://www.sciencedirect.com/science/article/pii/S2590005625001973"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FileText size={16} />
+                <span>Read Paper</span>
+              </a>
+            </div>
           </div>
         </section>
 
