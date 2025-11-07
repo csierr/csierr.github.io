@@ -256,9 +256,10 @@ const Index = () => {
 
             <ProjectCard
               title="Learning Japanese App"
-              description="A web application for Japanese language learners. It features a translation tool and provides a curated list of study resources available in Chile. Available at: https://jap-app.csierr.cl/"
+              description="A web application for Japanese language learners. It features a translation tool and provides a curated list of study resources available in Chile."
               tech={['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Cloudflare', 'Amazon EC2', 'JavaScript', 'HTML', 'CSS']}
               github="https://github.com/tsunayoshi21/learning-japanese-app"
+              link="https://jap-app.csierr.cl/"
               image="/images/learning_japanese.png"
             />
           </div>
