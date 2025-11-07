@@ -23,7 +23,8 @@ export const ProjectCard = ({ title, description, tech, link, github, image }: P
 
   const faceStyle: React.CSSProperties = {
     WebkitBackfaceVisibility: 'hidden',
-    backfaceVisibility: 'hidden'
+    backfaceVisibility: 'hidden',
+    transform: 'translateZ(0)'
   };
 
   return (
