@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -90,7 +91,7 @@ export default {
         "fade-in": "fadeIn 0.6s ease-out",
         "glow-pulse": "glowPulse 2s ease-in-out infinite",
       },
-    },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
+}
 } satisfies Config;

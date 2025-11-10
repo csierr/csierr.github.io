@@ -187,4 +187,23 @@ All colors MUST be HSL.
       transform: translateY(0);
     }
   }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Opera */
+  }
+}
+
+.embla__slide {
+  transition: all 0.5s ease-in-out;
+  transform: scale(0.85);
+  opacity: 0.6;
+}
+
+.embla__slide.is-active {
+  transform: scale(1);
+  opacity: 1;
 }
