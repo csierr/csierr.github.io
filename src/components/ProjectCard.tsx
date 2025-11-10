@@ -28,11 +28,11 @@ export const ProjectCard = ({ title, description, tech, link, github, image }: P
   };
 
   return (
-    <div className="relative terminal-border bg-card rounded overflow-hidden" style={{ perspective: 1000 }}>
+    <div className="relative terminal-border bg-card rounded overflow-hidden h-[355px] flex flex-col" style={{ perspective: 1000 }}>
       {/* flip inner */}
-      <div style={innerStyle} className="w-full">
+      <div style={innerStyle} className="w-full h-full">
         {/* front face */}
-        <div className="p-6 bg-card" style={{ ...faceStyle, position: 'relative' }}>
+        <div className="p-6 bg-card h-full flex flex-col" style={{ ...faceStyle, position: 'relative' }}>
           <button
             aria-label="Show project image"
             onClick={() => setFlipped(true)}
@@ -42,7 +42,9 @@ export const ProjectCard = ({ title, description, tech, link, github, image }: P
           </button>
 
           <h3 className="text-xl font-semibold text-primary mb-3">{title}</h3>
-          <p className="text-muted-foreground mb-4">{description}</p>
+          <div className="flex-grow overflow-y-auto mb-4 pr-2">
+            <p className="text-muted-foreground">{description}</p>
+          </div>
 
           <div className="flex flex-wrap gap-2 mb-4">
             {tech.map((item, index) => (
@@ -55,7 +57,7 @@ export const ProjectCard = ({ title, description, tech, link, github, image }: P
             ))}
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 mt-auto pt-4 border-t border-border">
             {github && (
               <a
                 href={github}
@@ -101,6 +103,13 @@ export const ProjectCard = ({ title, description, tech, link, github, image }: P
             ) : (
               <div className="w-full h-full flex items-center justify-center">
                 <p className="text-muted-foreground">No preview available</p>
+                <button
+                  aria-label="Back to details"
+                  onClick={() => setFlipped(false)}
+                  className="absolute top-3 right-3 bg-secondary/70 hover:bg-secondary text-xs px-2 py-1 rounded text-foreground border border-border z-10"
+                >
+                  Back
+                </button>
               </div>
             )}
           </div>

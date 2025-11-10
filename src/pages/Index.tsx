@@ -1,6 +1,13 @@
-// BookTooltip component for showing book cover on hover
-import { useState } from 'react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Github, Linkedin, Mail, Terminal, Code2, Database, Brain, Cloud, Server, Cpu, FileText } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import React, { useState } from 'react';
+import { Navigation } from '@/components/Navigation';
+import { ProjectCard } from '@/components/ProjectCard';
+import { TimelineItem } from '@/components/TimelineItem';
+import { ToolCard } from '@/components/ToolCard';
 
+// BookTooltip component for showing book cover on hover
 const bookImages: Record<string, string> = {
   'Designing Machine Learning Systems': '/images/designing-ml-systems.jpg',
   'AI Engineering': '/images/ai-engineering.jpg',
@@ -30,14 +37,9 @@ function BookTooltip({ title, children }: { title: string; children: React.React
     </span>
   );
 }
-import { Navigation } from '@/components/Navigation';
-import { ProjectCard } from '@/components/ProjectCard';
-import { TimelineItem } from '@/components/TimelineItem';
-import { ToolCard } from '@/components/ToolCard';
-import { Github, Linkedin, Mail, Terminal, Code2, Database, Brain, Cloud, Server, Cpu, FileText } from 'lucide-react';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Index = () => {
+
   return (
     <div className="relative min-h-screen">
       <Navigation />
@@ -115,7 +117,7 @@ const Index = () => {
             
             <TimelineItem
               year="January 2025 - March 2025"
-              title="AI Engineer Intern"
+              title="AI Engineering Intern"
               organization="Infosys Limited Bangalore"
               description="Developed an AI-based solution for a Text-to-SQL problem. The system was designed to work with multiple data sources and handle error management and parallel query execution. A multi-agent architecture was implemented using LangGraph and LangChain."
             />
@@ -220,49 +222,74 @@ const Index = () => {
             <span className="text-accent">//</span> Portfolio
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-6">
-
-            <ProjectCard
-              title="Realtime Chatbot"
-              description="Local application that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
-              tech={['Python','FastAPI', 'WebSocket', 'OpenAI', 'JavaScript', 'HTML', 'CSS']}
-              github="https://github.com/csierr/realtime-voice-chatbot"
-              image="/images/realtime-chatbot.png"
-            />
-            
-            <ProjectCard
-              title="Finetuning BETO"
-              description="Fine-tuning of the BETO model (BERT-based model for Spanish) to classify sentences into school subjects. It includes training, evaluation, and integration into a local application."
-              tech={['Python', 'PyTorch', 'Transformers', 'JavaScript', 'HTML']}
-              github="https://github.com/csierr/finetuning-beto-for-spanish-text-classification"
-              image="/images/finetuning-beto.png"
-            />
-            
-            <ProjectCard
-              title="Forecasting Store Sales"
-              description="Project for analysis and forecast of monthly sales using models like Theta Forecaster, SARIMA, and Prophet. It covers EDA, data pre-processing, and evaluation of forecasting performance (MAPE, MAE, and R²)."
-              tech={['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Statsmodels', 'Prophet', 'Arima']}
-              github="https://github.com/csierr/forecasting-superstore-sales"
-              image="/images/forecasting.png"
-            />
-            
-            <ProjectCard
-              title="Personal Finances App"
-              description="Application to track personal expenses through a dedicated UI and Telegram bot. It integrates OpenAI for enhanced user interaction and financial insights (expenses overview, charts)."
-              tech={['Python', 'Flask', 'MySQL', 'JavaScript', 'HTML', 'Telegram API', 'OpenAI']}
-              github="https://github.com/tsunayoshi21/catitaycris_expenses_app"
-              image="/images/finanzas_app.png"
-            />
-
-            <ProjectCard
-              title="Learning Japanese App"
-              description="A web application for Japanese language learners. It features a translation tool and provides a curated list of study resources available in Chile."
-              tech={['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Cloudflare', 'Amazon EC2', 'JavaScript', 'HTML', 'CSS']}
-              github="https://github.com/tsunayoshi21/learning-japanese-app"
-              link="https://jap-app.csierr.cl/"
-              image="/images/learning_japanese.png"
-            />
-          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              <CarouselItem className="basis-full md:basis-1/2">
+                <div className="p-1">
+                  <ProjectCard
+                    title="Realtime Chatbot"
+                    description="Local application that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
+                    tech={['Python','FastAPI', 'WebSocket', 'OpenAI', 'JavaScript', 'HTML', 'CSS']}
+                    github="https://github.com/csierr/realtime-voice-chatbot"
+                    image="/images/realtime-chatbot.png"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2">
+                <div className="p-1">
+                  <ProjectCard
+                    title="Finetuning BETO"
+                    description="Fine-tuning of the BETO model (BERT-based model for Spanish) to classify sentences into school subjects. It includes training, evaluation, and integration into a local app."
+                    tech={['Python', 'PyTorch', 'Transformers', 'JavaScript', 'HTML', 'CSS', 'TypeScript', 'Flask']}
+                    github="https://github.com/csierr/finetuning-beto-for-spanish-text-classification"
+                    image="/images/finetuning-beto.png"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2">
+                <div className="p-1">
+                  <ProjectCard
+                    title="Forecasting Store Sales"
+                    description="Analysis and forecast of monthly sales using Theta Forecaster, SARIMA, and Prophet. It covers EDA, data pre-processing, and performance evaluation (MAPE, MAE, and R²)."
+                    tech={['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Statsmodels', 'Prophet', 'Arima']}
+                    github="https://github.com/csierr/forecasting-superstore-sales"
+                    image="/images/forecasting.png"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2">
+                <div className="p-1">
+                  <ProjectCard
+                    title="Personal Finances App"
+                    description="Application to track personal expenses through a dedicated UI and Telegram bot. It integrates OpenAI for enhanced user interaction and financial insights."
+                    tech={['Python', 'Flask', 'MySQL', 'JavaScript', 'HTML', 'Telegram API', 'OpenAI', 'CSS']}
+                    github="https://github.com/tsunayoshi21/catitaycris_expenses_app"
+                    image="/images/finanzas_app.png"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2">
+                <div className="p-1">
+                  <ProjectCard
+                    title="Learning Japanese App"
+                    description="A web application for Japanese language learners. It features a translation tool and provides a list of study resources available in Chile. Live app below!"
+                    tech={['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Cloudflare', 'Amazon EC2', 'TypeScript', 'DeepL']}
+                    github="https://github.com/tsunayoshi21/learning-japanese-app"
+                    link="https://jap-app.csierr.cl/"
+                    image="/images/learning_japanese.png"
+                  />
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </section>
 
         {/* Publications Section */}
