@@ -233,11 +233,12 @@ const Index = () => {
               <CarouselItem className="basis-full md:basis-1/2">
                 <div className="p-1">
                   <ProjectCard
-                    title="Realtime Chatbot"
-                    description="Local application that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
-                    tech={['Python','FastAPI', 'WebSocket', 'OpenAI', 'JavaScript', 'HTML', 'CSS']}
-                    github="https://github.com/csierr/realtime-voice-chatbot"
-                    image="/images/realtime-chatbot.png"
+                    title="Learning Japanese App"
+                    description="A web application for Japanese language learners. It features a translation tool and provides a list of study resources available in Chile. Live app below!"
+                    tech={['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Cloudflare', 'Amazon EC2', 'TypeScript', 'DeepL']}
+                    github="https://github.com/tsunayoshi21/learning-japanese-app"
+                    link="https://jap-app.csierr.cl/"
+                    image="/images/learning_japanese.png"
                   />
                 </div>
               </CarouselItem>
@@ -249,6 +250,17 @@ const Index = () => {
                     tech={['Python', 'PyTorch', 'Transformers', 'JavaScript', 'HTML', 'CSS', 'TypeScript', 'Flask']}
                     github="https://github.com/csierr/finetuning-beto-for-spanish-text-classification"
                     image="/images/finetuning-beto.png"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2">
+                <div className="p-1">
+                  <ProjectCard
+                    title="Realtime Chatbot"
+                    description="Local application that allows users to chat with an assistant through text and voice, using the Realtime API and WebSocket-based communication."
+                    tech={['Python','FastAPI', 'WebSocket', 'OpenAI', 'JavaScript', 'HTML', 'CSS']}
+                    github="https://github.com/csierr/realtime-voice-chatbot"
+                    image="/images/realtime-chatbot.png"
                   />
                 </div>
               </CarouselItem>
@@ -274,18 +286,6 @@ const Index = () => {
                   />
                 </div>
               </CarouselItem>
-              <CarouselItem className="basis-full md:basis-1/2">
-                <div className="p-1">
-                  <ProjectCard
-                    title="Learning Japanese App"
-                    description="A web application for Japanese language learners. It features a translation tool and provides a list of study resources available in Chile. Live app below!"
-                    tech={['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Cloudflare', 'Amazon EC2', 'TypeScript', 'DeepL']}
-                    github="https://github.com/tsunayoshi21/learning-japanese-app"
-                    link="https://jap-app.csierr.cl/"
-                    image="/images/learning_japanese.png"
-                  />
-                </div>
-              </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
@@ -301,7 +301,7 @@ const Index = () => {
           <div className="space-y-6">
             <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
               <h3 className="text-xl font-semibold text-primary mb-2">
-                <a href="https://www.sciencedirect.com/science/article/pii/S2590005625001973" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a target="_blank" rel="noopener noreferrer">
                   An integrated complaint management system based on large language models: Case study in the electric sector
                 </a>
               </h3>
