@@ -1,4 +1,4 @@
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselDots } from '@/components/ui/carousel';
 import { Github, Linkedin, Mail, Terminal, Code2, Database, Brain, Cloud, Server, Cpu, FileText } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import React, { useState } from 'react';
@@ -204,7 +204,7 @@ const Index = () => {
           <div className="terminal-border bg-card/50 p-6 rounded">
             <h3 className="text-lg font-semibold text-primary mb-3">Additional Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {['Git', 'REST', 'Linux', 'Shell scripting', 'Langfuse', 'DeepEval', 'Redis', 'Celery', 'JavaScript', 'HTML', 'MySQL', 'SQLite', 'Google Cloud Run', 'Google Composer'].map((skill) => (
+              {['Git', 'REST', 'Linux', 'Shell scripting', 'Redis', 'Celery', 'JavaScript', 'HTML', 'CSS', 'TypeScript', 'MySQL', 'SQLite', 'ArangoDB', 'Google Cloud Run', 'Google Composer', 'Langfuse', 'DeepEval'].map((skill) => (
                 <span
                   key={skill}
                   className="text-xs px-3 py-1 bg-secondary text-foreground rounded border border-border hover:border-primary transition-colors"
@@ -289,6 +289,7 @@ const Index = () => {
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
+            <CarouselDots />
           </Carousel>
         </section>
 
@@ -307,7 +308,7 @@ const Index = () => {
               </h3>
               <p className="text-muted-foreground mb-3">Array Journal | Elsevier | 2025</p>
               <p className="text-sm text-muted-foreground mb-3">
-              This work presents an integrated complaint management system based on large language models (LLMs), applied to the electric sector. The system automates traditionally manual tasks through a service-oriented architecture combining data processing, virtual analysts, and a web application. Evaluations demonstrate its efficiency, robustness, and scalability.
+              This work presents an integrated complaint management system based on large language models, applied to the electric sector. The system automates traditionally manual tasks through a service-oriented architecture combining data processing, virtual analysts, and a web application. Evaluations demonstrate its efficiency, robustness, and scalability.
               </p>
               <a
                 href="https://www.sciencedirect.com/science/article/pii/S2590005625001973"
