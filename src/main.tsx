@@ -2,7 +2,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
-// Ensure initial theme class is applied before React hydrates to avoid flash
+// Initial theme class is applied before React hydrates to avoid flash
 try {
 	const stored = localStorage.getItem('theme-preference');
 	if (stored === 'light' || stored === 'dark') {

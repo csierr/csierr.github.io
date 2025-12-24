@@ -69,7 +69,7 @@ const Index = () => {
             <p className="text-foreground leading-relaxed mb-4">
               I'm an engineer passionate (and constantly learning!) about AI, software development, and solving real-world problems through technology. 
               My background blends hardware and software, I started programming microcontrollers and working on IoT projects, 
-              and later shifted toward artificial intelligence, focusing on machine learning, NLP, and large language models.
+              and later shifted toward software, machine learning, NLP, and large language models.
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
@@ -174,6 +174,7 @@ const Index = () => {
                 Certifications and Courses
               </h3>
               <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
+                <li>Django Application Development with SQL and Databases (IBM)</li>
                 <li>AWS Technical Essentials (AWS)</li>
                 <li>Application Development using Microservices and Serverless (IBM)</li>
                 <li>Developing AI Applications with Python and Flask (IBM)</li>
@@ -204,7 +205,7 @@ const Index = () => {
           <div className="terminal-border bg-card/50 p-6 rounded">
             <h3 className="text-lg font-semibold text-primary mb-3">Additional Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {['Git', 'REST', 'Linux', 'Shell scripting', 'Redis', 'Celery', 'JavaScript', 'HTML', 'CSS', 'TypeScript', 'MySQL', 'SQLite', 'ArangoDB', 'Google Cloud Run', 'Google Composer', 'Langfuse', 'DeepEval'].map((skill) => (
+              {['Git', 'REST', 'Linux', 'Shell scripting', 'Redis', 'Celery', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'TypeScript', 'Django', 'MySQL', 'SQLite', 'ArangoDB', 'Google Cloud Run', 'Google Composer', 'Langfuse', 'DeepEval'].map((skill) => (
                 <span
                   key={skill}
                   className="text-xs px-3 py-1 bg-secondary text-foreground rounded border border-border hover:border-primary transition-colors"
@@ -436,7 +437,7 @@ const Index = () => {
           
           <div className="terminal-border bg-card/50 p-8 rounded mb-8">
             <p className="text-xl text-muted-foreground mb-8">
-              Let's connect and discuss opportunities, projects, or just talk tech!
+              Let's connect and discuss opportunities, projects, or just talk!
             </p>
             
             <div className="space-y-4">
