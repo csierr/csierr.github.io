@@ -102,7 +102,14 @@ const Index = () => {
           
           <div className="space-y-0">
             <TimelineItem
-              year="May 2025 - Present"
+              year="January 2026 - Present"
+              title="Software Engineer"
+              organization="Andes Path"
+              description="Backend development in C++ for robotics systems, leveraging Oat++, CMake, and Zenoh to support data-intensive robotics applications."
+            />
+
+            <TimelineItem
+              year="May 2025 - January 2026"
               title="AI Engineer"
               organization="ClickIT DevOps and Software Development"
               description="Backend development and integration of artificial intelligence into software pipelines. Collaboration with multidisciplinary teams. Responsible for testing, evaluating, and presenting technical demos of solutions to stakeholders."
