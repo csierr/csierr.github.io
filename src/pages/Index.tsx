@@ -73,7 +73,7 @@ const Index = () => {
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
-              I truly enjoy solving problems and addressing real needs through programming, combining technical knowledge with creativity.
+              I truly enjoy solving problems through programming, combining technical knowledge with creativity.
               I'm dedicated, proactive, and always motivated to keep learning and contributing to new challenges where I can make a meaningful impact.
             </p>
           </div>
@@ -118,7 +118,7 @@ const Index = () => {
             <TimelineItem
               year="March 2025 - May 2025"
               title="Development Engineer"
-              organization="Cyber-Physical Systems Laboratory"
+              organization="Cyber-Physical Systems Research and Technology Center"
               description="Designed and integrated AI-driven software pipelines with real-time interaction, particularly applications involving real-time interaction (TTS, STT, Speech-to-Speech), with Retrieval Augmented Generation (RAG) integration."
             />
             
@@ -132,7 +132,7 @@ const Index = () => {
             <TimelineItem
               year="July 2025 - December 2025"
               title="Thesis Project"
-              organization="Cyber-Physical Systems Laboratory"
+              organization="Cyber-Physical Systems Research and Technology Center"
               description="Developed and deployed an automatic system for classification of complaints received by the chilean Superintendency of Electricity and Fuels based on Large Language Models (LLMs). The work included evaluation and fine-tuning of different LLMs (encoder-only, encoder-decoder, and decoder-only), and implementation of a pilot in web app format that integrates the classification system, data visualization, statistics, and generation of processing requests, optimizing its management in the organization."
             />
 
