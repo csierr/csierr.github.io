@@ -105,7 +105,7 @@ const Index = () => {
               year="September 2026 - Present"
               title="MLOps Engineer"
               organization="Xepelin"
-              description="Building the ML platform behind our credit-risk models. I design and run the Feature Store (Feast on GCP with 4,000+ features across 9 domains), deploy models as real-time services, and own monitoring, CI/CD and environments end to end."
+              description="Building the ML platform behind credit-risk models. I design and run the Feature Store (Feast on GCP with 4,000+ features across 9 domains), deploy models as real-time services, and own monitoring, CI/CD and environments end to end."
             />
 
             <TimelineItem
@@ -209,7 +209,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             <ToolCard icon={Code2} name="Python" level="Advanced" />
-            <ToolCard icon={Cloud} name="AWS / Google Cloud" level="Intermediate" />
+            <ToolCard icon={Cloud} name="GCP / AWS" level="Intermediate" />
             <ToolCard icon={Database} name="PostgreSQL / MongoDB" level="Intermediate" />
             <ToolCard icon={Brain} name="PyTorch" level="Intermediate" />
             <ToolCard icon={Server} name="FastAPI / Flask" level="Intermediate" />
@@ -219,7 +219,7 @@ const Index = () => {
           <div className="terminal-border bg-card/50 p-6 rounded">
             <h3 className="text-lg font-semibold text-primary mb-3">Additional Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {['Git', 'REST', 'Linux', 'Shell scripting', 'Redis', 'Celery', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'TypeScript', 'Django', 'MySQL', 'SQLite', 'ArangoDB', 'Google Cloud Run', 'Google Composer', 'Langfuse', 'DeepEval'].map((skill) => (
+              {['Git', 'Github Actions', 'REST', 'Linux', 'SQL', 'Shell scripting', 'Redis', 'Celery', 'Claude Code', 'Feast', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'TypeScript', 'Django', 'MySQL', 'SQLite', 'ArangoDB', 'Google Cloud Run', 'Google Cloud Run Jobs', 'Google Composer', 'BigQuery', 'Langfuse', 'DeepEval'].map((skill) => (
                 <span
                   key={skill}
                   className="text-xs px-3 py-1 bg-secondary text-foreground rounded border border-border hover:border-primary transition-colors"
