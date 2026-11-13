@@ -102,7 +102,14 @@ const Index = () => {
           
           <div className="space-y-0">
             <TimelineItem
-              year="January 2026 - Present"
+              year="September 2026 - Present"
+              title="MLOps Engineer"
+              organization="Xepelin"
+              description="Building the ML platform behind our credit-risk models. I design and run the Feature Store (Feast on GCP with 4,000+ features across 9 domains), deploy models as real-time services, and own monitoring, CI/CD and environments end to end."
+            />
+
+            <TimelineItem
+              year="January 2026 - September 2026"
               title="Software Engineer"
               organization="Andes Path"
               description="Backend development in C++ for robotics systems, leveraging Oat++, CMake, and Zenoh to support data-intensive robotics applications."
