@@ -68,14 +68,14 @@ const Index = () => {
           
           <div className="terminal-border bg-card/50 p-8 rounded mb-6">
             <p className="text-foreground leading-relaxed mb-4">
-              I'm an engineer passionate (and constantly learning!) about AI, software development, and solving real-world problems through technology. 
-              My background blends hardware and software, I started programming microcontrollers and working on IoT projects, 
+              I'm an engineer passionate (and constantly learning!) about AI, software development, and solving problems through technology. 
+              My background blends hardware and software. I started programming microcontrollers and working on IoT projects, 
               and later shifted toward software, machine learning, NLP, and large language models.
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
-              I truly enjoy solving problems through programming, combining technical knowledge with creativity.
-              I'm dedicated, proactive, and always motivated to keep learning and contributing to new challenges where I can make a meaningful impact.
+              I truly enjoy understanding problems and getting to solve them through programming, combining technical knowledge with creativity.
+              I'm dedicated, proactive, and always motivated to keep learning and contributing to new challenges where I can make an impact.
             </p>
           </div>
 
@@ -408,6 +408,36 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Volunteering Section */}
+        <section id="volunteering" className="py-12 section-fade-in">
+          <h2 className="text-4xl font-bold mb-8 text-foreground">
+            <span className="text-accent">//</span> Volunteering
+          </h2>
+
+          <div className="space-y-6">
+            <div className="terminal-border bg-card p-6 rounded hover:glow-primary transition-all duration-300">
+              <h3 className="text-xl font-semibold text-primary mb-2">
+                Mentor
+              </h3>
+              <p className="text-muted-foreground mb-3">Technovation Girls Chile | July 2026 - Present</p>
+              <p className="text-sm text-muted-foreground">
+                Technovation Girls Chile is a program that brings technology and entrepreneurship closer to girls and young women.
+                As a mentor, I guide a team from ideation to development of a mobile app. The girls identify a problem in their community, investigate it, and build the solution using MIT App Inventor and ML4K.
+                Along the way, we teach them programming, business, and entrepreneurship.
+              </p>
+              <a
+                href="https://technovation.cl/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-4 text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FileText size={16} />
+                <span>Technovation Girls Chile website</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Book Recommendations Section */}
         <section id="books" className="py-12 section-fade-in">
           <h2 className="text-4xl font-bold mb-8 text-foreground">
@@ -503,7 +533,7 @@ const Index = () => {
           </div>
 
           <div className="text-center text-sm text-muted-foreground">
-            <p>&copy; 2025 Portfolio. Built with React + Vite + Tailwind CSS</p>
+            <p>&copy; 2026 Portfolio. Built with React + Vite + Tailwind CSS</p>
           </div>
         </section>
       </main>
