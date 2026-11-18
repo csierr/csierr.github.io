@@ -14,6 +14,7 @@ const bookImages: Record<string, string> = {
   'Python for Data Analysis': '/images/python-for-data-analysis.jpg',
   'Grokking Algorithms': '/images/grokking-algorithms.jpg',
   'A Court of Thorns and Roses': '/images/acotar.jpg',
+  'The Courage to be Disliked': '/images/the-courage-to-be-disliked.jpeg',
   'Before the Coffee Gets Cold': '/images/before-coffee.jpg',
   'Fairy Tale': '/images/fairy-tale.jpg',
   'Fairy Oak': '/images/fairy-oak.jpg',
@@ -219,7 +220,7 @@ const Index = () => {
           <div className="terminal-border bg-card/50 p-6 rounded">
             <h3 className="text-lg font-semibold text-primary mb-3">Additional Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {['Git', 'Github Actions', 'REST', 'Linux', 'SQL', 'Shell scripting', 'Redis', 'Celery', 'Claude Code', 'Feast', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'TypeScript', 'Django', 'MySQL', 'SQLite', 'ArangoDB', 'Google Cloud Run', 'Google Cloud Run Jobs', 'Google Composer', 'BigQuery', 'Langfuse', 'DeepEval'].map((skill) => (
+              {['Git', 'CI/CD', 'Github Actions', 'REST', 'Linux', 'SQL', 'Shell scripting', 'Redis', 'Celery', 'Claude Code', 'Feast', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'TypeScript', 'Django', 'MySQL', 'SQLite', 'ArangoDB', 'Google Cloud Run', 'Google Cloud Run Jobs', 'Google Composer', 'BigQuery', 'Langfuse', 'DeepEval'].map((skill) => (
                 <span
                   key={skill}
                   className="text-xs px-3 py-1 bg-secondary text-foreground rounded border border-border hover:border-primary transition-colors"
@@ -414,7 +415,7 @@ const Index = () => {
           </h2>
           <div className="terminal-border bg-card/50 p-8 rounded mb-8">
             <p className="text-xl text-muted-foreground mb-6">
-              A few books that I've loved and that have shaped how I think about engineering and about building systems that actually work in the real world:
+              A few books that I've loved and that have shaped how I think about engineering and about building:
             </p>
             <ul className="list-disc list-inside space-y-2 text-foreground">
               <li><BookTooltip title="Designing Machine Learning Systems"><strong>Designing Machine Learning Systems by Chip Huyen</strong></BookTooltip></li>
@@ -432,9 +433,10 @@ const Index = () => {
           </h2>
           <div className="terminal-border bg-card/50 p-8 rounded mb-8">
             <p className="text-xl text-muted-foreground mb-6">
-              Not everything I read is about code, here are a some non-technical reads that I also really enjoyed:
+              Here are a some non-technical reads that I also really enjoyed:
             </p>
             <ul className="list-disc list-inside space-y-2 text-foreground">
+              <li><BookTooltip title="The Courage to be Disliked"><strong>The Courage to be Disliked by Ichiro Kishimi and Fumitake Koga</strong></BookTooltip></li>
             <li><BookTooltip title="A Court of Thorns and Roses"><strong>A Court of Thorns and Roses series by Sarah J. Maas</strong></BookTooltip></li>
             <li><BookTooltip title="Before the Coffee Gets Cold"><strong>Before the Coffee Gets Cold series by Toshikazu Kawaguchi</strong></BookTooltip></li>
             <li><BookTooltip title="Fairy Tale"><strong>Fairy Tale by Stephen King</strong></BookTooltip></li>
